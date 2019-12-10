@@ -1,0 +1,166 @@
+$font_family: "Roboto";
+$red: #ec4249;
+$green: #00bbb0;
+$blue: #009fe2;
+$lightgrey: #cbced2;
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	//font-family: $font_family;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1 {
+    text-align: center;
+}
+.modal-dialog {
+    max-width: 700px;
+}
+.modal-primary {
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    background: $green;
+    border: 1px solid $green;
+    &:hover {
+        color: $green;
+        background: white;
+        border: 1px solid $green;
+    }
+}
+.modal-tertiary {
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    font-size: 10px;
+    float: left;
+    color: $red;
+    border: 1px solid $red;
+    background: white;
+    &:hover {
+        color: white;
+        background: $red;
+        border: 1px solid white;
+    }
+}
+.modal-content {
+    border-radius: .5rem;
+    position: absolute;
+    width: 700px; /* fix to be responsive */
+    padding: 0px;
+}
+.modal-header {
+    text-align: center;
+    justify-content: center;
+    border: none;
+}
+.modal-body {
+    width: 100%;
+    padding: 20px;
+}
+.modal-title {
+    text-align: center;
+    width: auto;
+    font-size: 16px;
+}
+
+.modal-title .glyphicon {
+    font-size: 20px;
+    color: $green;
+}
+
+.modal-footer {
+    border-top: 1px solid #f1f1f1;
+    background: #fafafa;   
+    display: block;
+    padding: 15px 25px 15px 25px;
+}
+.form-row>.col, .form-row>[class*=col-] {
+    padding-left: 10px;   
+    padding-right: 10px;   
+}
+.fieldinput {
+    border: 1px solid $lightgrey;
+    border-radius: .3em;
+    background: white;
+    color: $lightgrey;
+    padding: 5px 3px 5px 10px;
+}
+select {
+    font-size: 12px;
+    background: white;
+    color: $lightgrey;
+    width: 150px;
+}
+option {
+    background: purple;   
+}
+.dropdown-wrapper {
+    width: 150px;
+    height: auto;
+    
+}
+.dropdown-header {
+    color: $lightgrey;   
+}
+.dropdown-list {
+    color: black;   
+}
+.dropdown-list-item {
+    text-decoration: none;
+    color: black;
+}
+.status-canceled {
+    background: $red;  
+    border: 1px solid $red;
+    
+    &:hover {
+        color: $red;
+        background: white;
+        border: 1px solid $red;
+    }
+}
+.status-completed {
+    background: $green;
+    border: 1px solid $green;
+    
+    &:hover {
+        color: $green;
+        background: white;
+        border: 1px solid $green;
+    }
+}
+.status-active {
+    background: $blue;  
+    border: 1px solid $blue;
+    
+    &:hover {
+        color: $blue;
+        background: white;
+        border: 1px solid $blue;
+    }
+}
+.boldtext {
+    font-weight: bold;   
+}
+.greentext {
+    font-weight: bold;
+    color: $green;
+}
+hr {
+    border: 1px solid $green; 
+    width: 50px;
+}
+input[type=date].form-control, input[type=time].form-control, input[type=datetime-local].form-control, input[type=month].form-control {
+    line-height: 12px;
+}
+.required-field {
+    color: $red;
+    font-weight: bold;
+}
